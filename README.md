@@ -1,4 +1,4 @@
-# CodingChallengee
+# CodingChallenge
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.3.
 
@@ -29,5 +29,6 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 I have added bootstrap 4 so that I dont have to style everything from scratch as mentioned in challenge description. I have used two approaches for design architecture of artist module. 
 
-1- By using artist details component selector and pass data from search component to details component. 
+1- By using artist details component selector and pass data from search component to details component.
+
 2- By using router outlet and pass query parameter from details component to event component.
