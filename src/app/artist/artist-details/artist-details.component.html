@@ -1,0 +1,27 @@
+<div class="row" *ngIf="artist">
+    <div class="col-md-6">
+        <div class="card">
+            <img class="card-img-top" [src]="artist.thumb_url" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">
+                    <a [routerLink]="!readonly ? './events' : null" [queryParams]="{artistName: artist.name}">{{artist.name}}</a>
+                </h5>
+                <small class="card-text">
+                    <a [href]="artist.facebook_page_url" target="_blank">{{artist.facebook_page_url}}</a>
+                </small>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row" *ngIf="errorMessage">
+    <div class="col-md-4">
+        <div class="alert alert-secondary" role="alert">
+            {{errorMessage}}
+        </div>
+    </div>
+</div>
+
+<!-- <app-artist-events [artistEvents]="artistEvents"></app-artist-events> -->
+
+<router-outlet></router-outlet>
